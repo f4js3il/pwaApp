@@ -1,0 +1,98 @@
+[debug] [2021-02-24T03:40:57.027Z] ----------------------------------------------------------------------
+[debug] [2021-02-24T03:40:57.032Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shalu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2021-02-24T03:40:57.033Z] CLI Version:   9.3.0
+[debug] [2021-02-24T03:40:57.033Z] Platform:      win32
+[debug] [2021-02-24T03:40:57.033Z] Node Version:  v12.17.0
+[debug] [2021-02-24T03:40:57.039Z] Time:          Tue Feb 23 2021 21:40:57 GMT-0600 (Central Standard Time)
+[debug] [2021-02-24T03:40:57.039Z] ----------------------------------------------------------------------
+[debug] [2021-02-24T03:40:57.039Z] 
+[debug] [2021-02-24T03:40:57.045Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-02-24T03:40:57.077Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-24T03:40:57.078Z] > authorizing via signed-in user
+[debug] [2021-02-24T03:40:57.078Z] [iam] checking project pwagramdb for permissions ["firebase.projects.get"]
+[debug] [2021-02-24T03:40:57.082Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-24T03:40:57.082Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-24T03:40:57.233Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-02-24T03:40:57.233Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2021-02-24T03:40:57.262Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 24 Feb 2021 03:40:57 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-24T03:40:57.274Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pwagramdb:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-02-24T03:40:57.461Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 24 Feb 2021 03:40:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=51","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-24T03:40:59.506Z] [functions] Using node@12 from host.
+[debug] [2021-02-24T03:40:59.510Z] defaultcredentials: writing to file C:\Users\shalu\AppData\Roaming\firebase\shaluchandran_gmail_com_application_default_credentials.json
+[debug] [2021-02-24T03:40:59.512Z] DEBUG: Setting GAC to C:\Users\shalu\AppData\Roaming\firebase\shaluchandran_gmail_com_application_default_credentials.json
+[debug] [2021-02-24T03:40:59.513Z] > refreshing access token with scopes: []
+[debug] [2021-02-24T03:40:59.514Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-24T03:40:59.656Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 24 Feb 2021 03:40:59 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-24T03:40:59.668Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pwagramdb/adminSdkConfig [none]
+[debug] [2021-02-24T03:40:59.992Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pwagramdb/adminSdkConfig 200
+[debug] [2021-02-24T03:40:59.992Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pwagramdb/adminSdkConfig {"projectId":"pwagramdb","databaseURL":"https://pwagramdb-default-rtdb.firebaseio.com","storageBucket":"pwagramdb.appspot.com","locationId":"us-central"}
+[debug] [2021-02-24T03:41:00.022Z] [functions] Watching "C:\PWA\sw-caching-01--updated-project\functions" for Cloud Functions...
+[debug] [2021-02-24T03:41:00.063Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-02-24T03:41:00.063Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-02-24T03:41:00.064Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-02-24T03:41:00.064Z] DEBUG: [worker-~diagnostic~-227ceda6-02e3-412c-9e29-75c88b503658]: Assigning socketPath: \\?\pipe\C:\PWA\sw-caching-01--updated-project\functions\28368
+[debug] [2021-02-24T03:41:00.065Z] DEBUG: [worker-~diagnostic~-227ceda6-02e3-412c-9e29-75c88b503658]: BUSY
+[debug] [2021-02-24T03:41:01.071Z] DEBUG: [runtime-status] [28368] Functions runtime initialized. {"cwd":"C:\\PWA\\sw-caching-01--updated-project\\functions","node_version":"12.17.0"}
+[debug] [2021-02-24T03:41:01.106Z] DEBUG: [runtime-status] [28368] Disabled runtime features: undefined
+[debug] [2021-02-24T03:41:01.171Z] DEBUG: [runtime-status] [28368] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-02-24T03:41:01.181Z] DEBUG: [runtime-status] [28368] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-24T03:41:01.185Z] DEBUG: [runtime-status] [28368] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-24T03:41:01.193Z] DEBUG: [runtime-status] [28368] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-02-24T03:41:01.195Z] DEBUG: [runtime-status] [28368] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-24T03:41:01.590Z] DEBUG: [runtime-status] [28368] Checked functions.config() {"config":{}}
+[debug] [2021-02-24T03:41:01.591Z] DEBUG: [runtime-status] [28368] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-02-24T03:41:01.591Z] DEBUG: [runtime-status] [28368] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-24T03:41:01.592Z] DEBUG: [runtime-status] [28368] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-02-24T03:41:01.592Z] DEBUG: [runtime-status] [28368] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-24T03:41:01.593Z] DEBUG: [runtime-status] [28368] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  SyntaxError: C:\PWA\sw-caching-01--updated-project\functions\pwagram-fb-key.json: Unexpected end of JSON input
+    at parse (<anonymous>)
+    at Object.Module._extensions..json (internal/modules/cjs/loader.js:1172:22)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (C:\PWA\sw-caching-01--updated-project\functions\index.js:9:22)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32) {"metadata":{"emulator":{"name":"functions"},"message":"SyntaxError: C:\\PWA\\sw-caching-01--updated-project\\functions\\pwagram-fb-key.json: Unexpected end of JSON input\n    at parse (<anonymous>)\n    at Object.Module._extensions..json (internal/modules/cjs/loader.js:1172:22)\n    at Module.load (internal/modules/cjs/loader.js:986:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\n    at Module.require (internal/modules/cjs/loader.js:1026:19)\n    at require (internal/modules/cjs/helpers.js:72:18)\n    at Object.<anonymous> (C:\\PWA\\sw-caching-01--updated-project\\functions\\index.js:9:22)\n    at Module._compile (internal/modules/cjs/loader.js:1138:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\n    at Module.load (internal/modules/cjs/loader.js:986:32)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2021-02-24T03:41:01.920Z] DEBUG: [worker-~diagnostic~-227ceda6-02e3-412c-9e29-75c88b503658]: exited
+[debug] [2021-02-24T03:41:01.920Z] DEBUG: [worker-~diagnostic~-227ceda6-02e3-412c-9e29-75c88b503658]: FINISHED
+[debug] [2021-02-24T03:41:14.880Z] DEBUG: File C:\PWA\sw-caching-01--updated-project\functions\pwagram-fb-key.json changed, reloading triggers
+[debug] [2021-02-24T03:41:15.890Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2021-02-24T03:41:15.923Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-02-24T03:41:15.923Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-02-24T03:41:15.923Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-02-24T03:41:15.923Z] DEBUG: [worker-~diagnostic~-0391649e-ac41-4a76-b1ed-a4d5303435b3]: Assigning socketPath: \\?\pipe\C:\PWA\sw-caching-01--updated-project\functions\31100
+[debug] [2021-02-24T03:41:15.924Z] DEBUG: [worker-~diagnostic~-0391649e-ac41-4a76-b1ed-a4d5303435b3]: BUSY
+[debug] [2021-02-24T03:41:16.177Z] DEBUG: [runtime-status] [31100] Functions runtime initialized. {"cwd":"C:\\PWA\\sw-caching-01--updated-project\\functions","node_version":"12.17.0"}
+[debug] [2021-02-24T03:41:16.178Z] DEBUG: [runtime-status] [31100] Disabled runtime features: undefined
+[debug] [2021-02-24T03:41:16.181Z] DEBUG: [runtime-status] [31100] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-02-24T03:41:16.183Z] DEBUG: [runtime-status] [31100] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-24T03:41:16.184Z] DEBUG: [runtime-status] [31100] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-24T03:41:16.185Z] DEBUG: [runtime-status] [31100] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-02-24T03:41:16.186Z] DEBUG: [runtime-status] [31100] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-24T03:41:16.253Z] DEBUG: [runtime-status] [31100] Checked functions.config() {"config":{}}
+[debug] [2021-02-24T03:41:16.253Z] DEBUG: [runtime-status] [31100] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-02-24T03:41:16.255Z] DEBUG: [runtime-status] [31100] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-24T03:41:16.259Z] DEBUG: [runtime-status] [31100] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-02-24T03:41:16.260Z] DEBUG: [runtime-status] [31100] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.1","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-02-24T03:41:16.260Z] DEBUG: [runtime-status] [31100] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\PWA\\sw-caching-01--updated-project\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  ReferenceError: config is not defined
+    at Object.<anonymous> (C:\PWA\sw-caching-01--updated-project\functions\index.js:15:44)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at initializeRuntime (C:\Users\shalu\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:676:29)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async handleMessage (C:\Users\shalu\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:714:20) {"metadata":{"emulator":{"name":"functions"},"message":"ReferenceError: config is not defined\n    at Object.<anonymous> (C:\\PWA\\sw-caching-01--updated-project\\functions\\index.js:15:44)\n    at Module._compile (internal/modules/cjs/loader.js:1138:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)\n    at Module.load (internal/modules/cjs/loader.js:986:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:879:14)\n    at Module.require (internal/modules/cjs/loader.js:1026:19)\n    at require (internal/modules/cjs/helpers.js:72:18)\n    at initializeRuntime (C:\\Users\\shalu\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:676:29)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async handleMessage (C:\\Users\\shalu\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:714:20)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2021-02-24T03:41:16.864Z] DEBUG: [worker-~diagnostic~-0391649e-ac41-4a76-b1ed-a4d5303435b3]: exited
+[debug] [2021-02-24T03:41:16.864Z] DEBUG: [worker-~diagnostic~-0391649e-ac41-4a76-b1ed-a4d5303435b3]: FINISHED
